@@ -28,8 +28,8 @@ Currently we are facing a problem concerning the data files. The files are too l
 
 You can access them the original file at: https://www.cardiacatlas.org/sunnybrook-cardiac-data/
 
-For now, until we solve this problem you can access our test batch here: https://drive.google.com/file/d/1QVsUIqJE5I7r9-XB8XbTEBvaHh-VXEua/view?usp=sharing
+For now, until we solve this problem you can use our project with the test batch we uploaded to GitHub. Curretnly you can find it in the *.ipynb_checkpoints* folder.
 
-You have to unzip this in the *.ipynb_checkpoints* folder. After that you should be able to run the *Cardiac MRI segmentation-checkpoint.ipynb*.
+With this you should be able to run the *Cardiac MRI segmentation-checkpoint.ipynb*.
 
 ## **Container**
