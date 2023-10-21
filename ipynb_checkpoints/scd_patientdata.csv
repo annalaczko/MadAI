@@ -1,0 +1,46 @@
+﻿PatientID,OriginalID,Gender,Age,Pathology
+SCD0000101,SC-HF-I-1,Male,53,Heart failure with infarct
+SCD0000201,SC-HF-I-2,Male,48,Heart failure with infarct
+SCD0000301,SC-HF-I-4,Male,79,Heart failure with infarct
+SCD0000401,SC-HF-I-5,Male,45,Heart failure with infarct
+SCD0000501,SC-HF-I-6,Male,60,Heart failure with infarct
+SCD0000601,SC-HF-I-7,Male,74,Heart failure with infarct
+SCD0000701,SC-HF-I-8,Male,46,Heart failure with infarct
+SCD0000801,SC-HF-I-9,Male,57,Heart failure with infarct
+SCD0000901,SC-HF-I-10,Male,69,Heart failure with infarct
+SCD0001001,SC-HF-I-11,Male,55,Heart failure with infarct
+SCD0001101,SC-HF-I-12,Female,71,Heart failure with infarct
+SCD0001201,SC-HF-I-40,Male,77,Heart failure with infarct
+SCD0001301,SC-HF-NI-3,Female,81,Heart failure without infarct
+SCD0001401,SC-HF-NI-4,Male,77,Heart failure without infarct
+SCD0001501,SC-HF-NI-7,Male,81,Heart failure without infarct
+SCD0001601,SC-HF-NI-11,Male,71,Heart failure without infarct
+SCD0001701,SC-HF-NI-12,Female,63,Heart failure without infarct
+SCD0001801,SC-HF-NI-13,Female,68,Heart failure without infarct
+SCD0001901,SC-HF-NI-14,Male,82,Heart failure without infarct
+SCD0002001,SC-HF-NI-15,Male,27,Heart failure without infarct
+SCD0002101,SC-HF-NI-31,Male,52,Heart failure without infarct
+SCD0002201,SC-HF-NI-33,Male,47,Heart failure without infarct
+SCD0002301,SC-HF-NI-34,Male,52,Heart failure without infarct
+SCD0002401,SC-HF-NI-36,Female,77,Heart failure without infarct
+SCD0002501,SC-HYP-1,Male,83,Hypertrophy
+SCD0002601,SC-HYP-3,Male,42,Hypertrophy
+SCD0002701,SC-HYP-6,Female,46,Hypertrophy
+SCD0002801,SC-HYP-7,Male,61,Hypertrophy
+SCD0002901,SC-HYP-8,Male,62,Hypertrophy
+SCD0003001,SC-HYP-9,Female,48,Hypertrophy
+SCD0003101,SC-HYP-10,Male,47,Hypertrophy
+SCD0003201,SC-HYP-11,Female,53,Hypertrophy
+SCD0003301,SC-HYP-12,Female,76,Hypertrophy
+SCD0003401,SC-HYP-37,Female,68,Hypertrophy
+SCD0003501,SC-HYP-38,Male,38,Hypertrophy
+SCD0003601,SC-HYP-40,Male,68,Hypertrophy
+SCD0003701,SC-N-2,Male,63,Normal
+SCD0003801,SC-N-3,Female,53,Normal
+SCD0003901,SC-N-5,Female,77,Normal
+SCD0004001,SC-N-6,Male,70,Normal
+SCD0004101,SC-N-7,Male,23,Normal
+SCD0004201,SC-N-9,Male,51,Normal
+SCD0004301,SC-N-10,Male,61,Normal
+SCD0004401,SC-N-11,Male,60,Normal
+SCD0004501,SC-N-40,Female,88,Normal
