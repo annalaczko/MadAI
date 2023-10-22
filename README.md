@@ -33,3 +33,19 @@ For now, until we solve this problem you can use our project with the test batch
 With this you should be able to run the *Cardiac MRI segmentation-checkpoint.ipynb*.
 
 ## **Container**
+
+### Requirements
+The project can be run in a Docker container. Docker has to be installed on this computer, for this to work.
+
+### Start docker
+- After docker is installed, simply run **docker_start.ps1** script in a terminal:
+`.\docker_start.ps1`
+- Click the url provided by the docker container in the terminal to reach the jupyter server
+e.g.: `http://127.0.0.1:8888/tree?token=56646...`
+- Click `Cardiac_MRI_segmentation-checkpoint.ipynb`
+- Saving in the browser (jupyter) also saves the file in the filesystem
+- Changing the files in the filesystem also changes files in the docker container (refreshing the browser updates the files in jupyter)
+
+### Stop docker
+After finishing and saving your work, you can stop the docker container with  **docker_stop.ps1** script in a terminal:
+`.\docker_stop.ps1`
