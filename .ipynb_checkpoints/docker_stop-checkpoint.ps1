@@ -1,0 +1,2 @@
+docker stop madai_container
+docker rm madai_container
