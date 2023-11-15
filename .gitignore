@@ -2,3 +2,5 @@
 /SCD_IMAGES
 /data/SCD_IMAGES
 SCD_IMAGES.zip
+data/images.npz
+data/df_patientdata.csv
