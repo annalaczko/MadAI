@@ -26,7 +26,9 @@ In this project, you'll dive into the idea of using multiple models together, kn
 
 Currently we are facing a problem concerning the data files. The files are too large and we cannot upload them to GitHub.
 
-You can access them the original file at: https://www.cardiacatlas.org/sunnybrook-cardiac-data/
+You can access the original file at: https://www.cardiacatlas.org/sunnybrook-cardiac-data/
+
+Our modified datafiles can be found here: https://drive.google.com/file/d/1ZfMrP214ZHfaliZqskRgOYZ4WXjPdlMB/view?usp=sharing
 
 For now, until we solve this problem you can use our project with the test batch we uploaded to GitHub. Currently you can find it in the *.ipynb_checkpoints* folder.
 
