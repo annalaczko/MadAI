@@ -51,3 +51,22 @@ e.g.: `http://127.0.0.1:8888/tree?token=56646...`
 ### Stop docker
 After finishing and saving your work, you can stop the docker container with  **docker_stop.ps1** script in a terminal:
 `.\docker_stop.ps1`
+
+## Run the pipeline
+The notebooks have to run in the following order:
+- 1 - Downloading libraries
+- 2 - Data preparation
+- 3 - Training
+
+## Train the models
+Because we have both images and patient data, we are using an ensamble model as a baseline
+- **image_classifier** is a RandomForestClassifier
+- **patient_data_classifier** is a RandomForestClassifier
+
+### Image Classifier
+image_classifier can be trained with the 'Image' column of the prepared dataset.
+
+### Patient Data Classifier
+patient_data_classifier can be trained with all the columns of the prepared dataset except: 'Image', 'PatientID', 'Pathology'.
+
+## Evaluate the models
