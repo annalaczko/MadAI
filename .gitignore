@@ -2,3 +2,4 @@
 *.dcm
 data/df_patientdata.csv
 data/images.npz
+data/scd_patientdata.csv
