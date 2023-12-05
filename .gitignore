@@ -6,3 +6,4 @@ data/images.npz
 data/df_patientdata.csv
 *.npz
 *.npz
+*.joblib
