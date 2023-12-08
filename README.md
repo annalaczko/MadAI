@@ -34,25 +34,42 @@ For now, until we solve this problem you can use our project with the test batch
 
 With this you should be able to run the *Cardiac MRI segmentation-checkpoint.ipynb*.
 
-## **Container**
+## **Docker Container**
 
 ### Requirements
 The project can be run in a Docker container. Docker has to be installed on this computer, for this to work.
 
-### Start docker
-- After docker is installed, simply run **docker_start.ps1** script in a terminal:
-`.\docker_start.ps1`
-- Click the url provided by the docker container in the terminal to reach the jupyter server
-e.g.: `http://127.0.0.1:8888/tree?token=56646...`
-- Click `Cardiac_MRI_segmentation-checkpoint.ipynb`
-- Saving in the browser (jupyter) also saves the file in the filesystem
-- Changing the files in the filesystem also changes files in the docker container (refreshing the browser updates the files in jupyter)
+You can install from: https://www.docker.com/products/docker-desktop/
+
+### Create and start container (for the first time)
+- In a command line 
+    - Change `<repo-path>` to your actual repository path
+    - Run `docker run -v <repo-path>:/app -p 127.0.0.1:8888:8888 --name madai_container julcsi333/bme_madai_2023`
+
+### Start container
+- In a command line 
+    - Run `docker start madai_container`
+
+### Access Jupyter server
+- In a command line
+    - Run `docker exec -it madai_container jupyter notebook list`
+    - This will list the URL that the jupyter is running on
+    - You should see something like this: `http://124be635806e:8888/?token=5d999fe...6179434f`
+    - Change the `124be635806e` part to `localhost`
+    - Paste the URL in a browser 
+        - Something like: `http://localhost:8888/?token=5d999fe...6179434f`
 
 ### Stop docker
-After finishing and saving your work, you can stop the docker container with  **docker_stop.ps1** script in a terminal:
-`.\docker_stop.ps1`
+After finishing and saving your work, you can stop the docker container with this line in a terminal:
+- `docker stop madai_container`
 
-## Run the pipeline
+### About the container
+- Saving in the browser (jupyter) also saves the file in the filesystem
+- Changing the files in the filesystem also changes files in the docker container (refreshing the browser updates the files in jupyter)
+- The Docker image was made with the `requirements.txt` and `Dockerfile` in the root of the repo.
+- The image is published [here](https://hub.docker.com/repository/docker/julcsi333/bme_madai_2023/general).
+
+## **Run the pipeline**
 The notebooks have to run in the following order:
 - 1 - Downloading libraries
 - 2 - Data preparation
