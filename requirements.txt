@@ -115,7 +115,7 @@ jupyterlab-git==0.41.0
 jupyterlab-pygments==0.2.2
 jupyterlab_server==2.25.0
 jupyterlab-widgets==3.0.9
-keras==2.13.1
+keras==2.14.0
 kiwisolver==1.4.5
 lazy_loader==0.3
 libclang==16.0.6
@@ -233,10 +233,10 @@ statsmodels==0.14.0
 sympy==1.12
 tables==3.9.1
 tblib==2.0.0
-tensorboard==2.13.0
+tensorboard==2.14.0
 tensorboard-data-server==0.7.1
-tensorflow==2.13.0
-tensorflow-estimator==2.13.0
+tensorflow==2.14.0
+tensorflow-estimator==2.14.0
 tensorflow-io-gcs-filesystem==0.34.0
 termcolor==2.3.0
 terminado==0.17.1
@@ -267,7 +267,7 @@ websockets==11.0.3
 Werkzeug==3.0.0
 wheel==0.41.2
 widgetsnbextension==4.0.9
-wrapt==1.15.0
+wrapt==1.14.0
 xlrd==2.0.1
 xyzservices==2023.10.0
 yarl==1.9.2
