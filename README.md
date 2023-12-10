@@ -24,15 +24,21 @@ In this project, you'll dive into the idea of using multiple models together, kn
 
 ## **Repository**
 
-Currently we are facing a problem concerning the data files. The files are too large and we cannot upload them to GitHub.
-
 You can access the original file at: https://www.cardiacatlas.org/sunnybrook-cardiac-data/
 
-Our modified datafiles can be found here: https://drive.google.com/file/d/1ZfMrP214ZHfaliZqskRgOYZ4WXjPdlMB/view?usp=sharing
+Root:
+- `Dockerfile`, `requirements.txt`: Files needed for contenarization image building
+- `1 - Data preparation.ipynb`, `2 - Training and Evaluation.ipynb`, `3 - User Interface.ipynb`: notebooks for the [pipeline](#run-the-pipeline)
 
-For now, until we solve this problem you can use our project with the test batch we uploaded to GitHub. Currently you can find it in the *.ipynb_checkpoints* folder.
+Data folder:
+- Input for `1 - Data preparation`: the images and numeric data to patients
+- Output for `1 - Data preparation`: saves the shuffled data in batches here
+- Input for `2 - Training and Evaluation`: reads these data batches
 
-With this you should be able to run the *Cardiac MRI segmentation-checkpoint.ipynb*.
+Misc folder:
+- Files created during development
+- Not relevant for the user
+
 
 ## **Docker Container**
 
@@ -44,7 +50,7 @@ You can install from: https://www.docker.com/products/docker-desktop/
 ### Create and start container (for the first time)
 - In a command line 
     - Change `<repo-path>` to your actual repository path
-    - Run `docker run -v <repo-path>:/app -p 127.0.0.1:8888:8888 --name madai_container julcsi333/bme_madai_2023`
+    - Run `docker run -v <repo-path>:/app -p 127.0.0.1:8888:8888 --name madai_container julcsi333/bme_madai_2023:1.1`
 
 ### Start container
 - In a command line 
@@ -68,22 +74,22 @@ After finishing and saving your work, you can stop the docker container with thi
 - Changing the files in the filesystem also changes files in the docker container (refreshing the browser updates the files in jupyter)
 - The Docker image was made with the `requirements.txt` and `Dockerfile` in the root of the repo.
 - The image is published [here](https://hub.docker.com/repository/docker/julcsi333/bme_madai_2023/general).
+- The current version that we are using is `1.1`
 
 ## **Run the pipeline**
 The notebooks have to run in the following order:
-- 1 - Downloading libraries
-- 2 - Data preparation
-- 3 - Training
+- [1 - Data preparation](1%20-%20Data%20preparation.ipynb)
+- [2 - Training and evaluation](2%20-%20Training%20and%20evaluation.ipynb)
+- [3 - User interface](3%20-%20User%20interface.ipynb)
 
 ## Train the models
-Because we have both images and patient data, we are using an ensamble model as a baseline
-- **image_classifier** is a RandomForestClassifier
-- **patient_data_classifier** is a RandomForestClassifier
-
-### Image Classifier
-image_classifier can be trained with the 'Image' column of the prepared dataset.
-
-### Patient Data Classifier
-patient_data_classifier can be trained with all the columns of the prepared dataset except: 'Image', 'PatientID', 'Pathology'.
+Because we have both images and patient data, we are using an ensemble model
+- Read the training datafiles
+- Train individual models
+- Read the ensemble training datafiles
+- Train ensemble voting classifier
+- You can see these in action here: [2 - Training and evaluation](2%20-%20Training%20and%20evaluation.ipynb)
 
 ## Evaluate the models
+Evaluating the model can be seen in [2 - Training and evaluation](2%20-%20Training%20and%20evaluation.ipynb):
+- `evaluate_model(voting_classifier, X_test, y_test)`
