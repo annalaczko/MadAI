@@ -25,6 +25,7 @@ In this project, you'll dive into the idea of using multiple models together, kn
 ## **Repository**
 
 You can access the original file at: https://www.cardiacatlas.org/sunnybrook-cardiac-data/
+Our modified datafiles can be found here: https://drive.google.com/file/d/1ZfMrP214ZHfaliZqskRgOYZ4WXjPdlMB/view?usp=sharing
 
 Root:
 - `Dockerfile`, `requirements.txt`: Files needed for contenarization image building
