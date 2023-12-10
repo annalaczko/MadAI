@@ -95,5 +95,5 @@ Because we have both images and patient data, we are using an ensemble model
 - You can see these in action here: [2 - Training and evaluation](2%20-%20Training%20and%20evaluation.ipynb)
 
 ## Evaluate the models
-Evaluating the model can be seen in [2 - Training and evaluation](2%20-%20Training%20and%20evaluation.ipynb):
+Evaluation of the model can be seen in [2 - Training and evaluation](2%20-%20Training%20and%20evaluation.ipynb):
 - `evaluate_model(voting_classifier, X_test, y_test)`
