@@ -25,7 +25,8 @@ In this project, you'll dive into the idea of using multiple models together, kn
 ## **Repository**
 
 You can access the original file at: https://www.cardiacatlas.org/sunnybrook-cardiac-data/
-Our modified datafiles can be found here: https://drive.google.com/file/d/1ZfMrP214ZHfaliZqskRgOYZ4WXjPdlMB/view?usp=sharing
+Our modified datafiles can be found here: https://drive.google.com/file/d/1jf2--zcF4WmJsAW53EmSd6r_Nhb2UuCx/view?usp=sharing
+You have to extract the contents of it into the data folder. Right now you only need the "SCD_IMAGES" folder, you can delete the rest.
 
 Root:
 - `Dockerfile`, `requirements.txt`: Files needed for contenarization image building
